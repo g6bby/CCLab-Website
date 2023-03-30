@@ -2,44 +2,80 @@
     margin: 0;
     padding: 0;
     font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
     background-color: #eff4fd;
 }
+
+
 
 .hero{
     position: relative;
     width: 100%;
     height: 100vh;
     background: #eff4fd;
+    /* border: solid red 10px; */
 }
+
 
 nav{
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
     justify-content: space-between;
 }
 
-nav ul li{
-    display: inline-block;
+.logo {
+    margin-left: 30px;
+    margin-top: 15px;
+
+}
+
+.contacthead{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contacthead h1{
+    font-size: 50px;
+    color: #212121;
+    margin-top: 60px;
+    flex: 1;
+    /* border: solid red 1px; */
+}
+
+.contacthead p{
+    color: #555;
+    font-size: 20px;
+    line-height: 22px;
+    flex: 1;
+}
+
+.links {
+    margin-right: 50px;
+}
+
+nav ul {
+    display: flex;
     list-style: none;
-    margin: 10px 20px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+    flex:  1 1 20;
 }
 
 nav ul li a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    flex: 1;
 }
 
 nav ul li a:hover{
     color: slateblue;
-}
-
-.logotop{
-    margin-left: -6%;
-    margin-top: -6%;
 }
 
 .detel{
@@ -60,6 +96,9 @@ span{
 .detel p{
     color: #555;
     line-height: 22px;
+    font-size: 20px;
+    line-height: 22px;
+    flex: 1;
 }
 
 .detel a{
@@ -88,6 +127,8 @@ span{
     bottom: 0;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
+    /* object-fit:fill; */
+    /* opacity: .8 */
 }
 
 .images:hover .avatar{
@@ -100,6 +141,8 @@ span{
     position: absolute;
     bottom: 0;
     left: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .games p{
@@ -110,24 +153,16 @@ span{
     text-align:justify;
     word-wrap: break-word;
     margin-right: 10%;
+    flex: 1;
 }
 
-.contacthead{
-    margin-left: 19%;
-    margin-top: -10%;
+.games iframe{
+    flex:1;
+    display:block;
 }
 
-.contacthead h1{
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
-    left: 100px;
-}
 
-.contacthead p{
-    color: #555;
-    line-height: 22px;
-}
+
 
 .info{
     margin-top: 13%;
@@ -150,4 +185,8 @@ span{
         position: absolute;
         bottom: 0;
         left: 150px;
+}
+
+.code h2{
+    color: #212121;
 }
