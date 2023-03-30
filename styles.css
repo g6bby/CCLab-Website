@@ -190,3 +190,12 @@ span{
 .code h2{
     color: #212121;
 }
+
+.code p{
+    color: #555;
+    font-size: 18px;
+    line-height: 1.66667;
+    font-family: 'Open Sans',Arial,sans-serif;
+    text-align:justify;
+    word-wrap: break-word;
+}
